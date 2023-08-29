@@ -29,13 +29,10 @@ const HowIWork = () => {
         ease: ease,
         opacity: 0,
         skewY: 12,
-        stagger: {
-          amount: 0.3,
-        },
         scrollTrigger: {
           trigger: workCards,
           start: "top bottom",
-          end: "top 25%",
+          end: "top 10%",
           scrub: 0.5,
         },
       });

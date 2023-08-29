@@ -73,10 +73,12 @@ const Experience = () => {
             </span>
             <span className="font-oswald text-[1vw]">May 2023 - June 2023</span>
             <span className="text-right font-oswald font-extralight">
-              - Undertook an independent initiative to design and develop a
-              website for OPI, a distinguished consulting firm. <br />- This
-              endeavor allowed me to explore both design and development
-              aspects, contributing to a holistic digital solution.
+              - Pioneered the development of a dynamic website for a nascent
+              consulting enterprise. <br /> - Conceptualized and executed the
+              website's design, along with generating a substantial portion of
+              its content. <br /> - Sole-handedly led and completed this
+              project, showcasing my ability to manage and deliver
+              independently.
             </span>
           </div>
         </div>
@@ -136,10 +138,6 @@ const Experience = () => {
               captivating video trailers, eye-catching posters, and engaging
               podcasts. <br />- Innovatively integrated design and technology to
               enhance the organization's online presence and engagement. <br />
-              <br />
-              This experience underscores my proficiency in not only leading
-              technological aspects but also my creative prowess in utilizing
-              design tools to communicate and engage effectively.
             </span>
           </div>
         </div>

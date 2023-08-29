@@ -7,33 +7,29 @@ import {
   LinkedIn,
 } from "@mui/icons-material";
 import React, { useEffect } from "react";
-import { Power3, gsap } from "gsap";
+import { Power3, Power4, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 const HomePage = () => {
   gsap.registerPlugin(ScrollTrigger);
-  const ease = Power3.easeInOut();
+  const ease = Power4.easeOut();
   useEffect(() => {
     let ctx = gsap.context(() => {
       const tl = gsap.timeline();
-      tl.fromTo(
+      tl.from(
         ".home-akshit",
         {
-          yPercent: -130,
-        },
-        {
-          yPercent: 0,
+          duration: 1,
+          yPercent: -200,
           ease: ease,
         },
         "1"
       );
-      tl.fromTo(
+      tl.from(
         ".home-aryan",
         {
-          yPercent: 130,
-        },
-        {
-          yPercent: 0,
+          duration: 1,
+          yPercent: 200,
           ease: ease,
         },
         "1"
@@ -76,10 +72,8 @@ const HomePage = () => {
       </div>
       <div className="flex items-center justify-between w-full">
         <div className="flex flex-col items-center justify-center w-1/5 location-links">
-          <div className="w-full flex pl-5 pr-10 py-5 text-left justify-between rounded-r-full font-oswald text-[1.8rem] bg-text text-bg">
-            <span>
-              Located in <br /> Mumbai, IN
-            </span>
+          <div className="w-full flex pl-5 pr-10 py-5 text-left items-center justify-between rounded-r-full font-oswald text-[1.8rem] bg-text text-bg">
+            <span>Mumbai, IN</span>
             <div className="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-bg">
               .
             </div>
