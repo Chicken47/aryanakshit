@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const Contact = () => {
@@ -47,10 +48,13 @@ const Contact = () => {
           <span className="font-akira text-[9vw] -mt-[6vw]">connect</span>
         </div>
         <div className="flex flex-col items-end space-y-5">
-          <span className="px-10 py-3 border rounded-full font-oswald border-text">
+          <Link
+            href={"mailto:akshit.aryan1999@gmail.com"}
+            className="px-10 py-3 transition-all duration-500 border rounded-full cursor-pointer font-oswald border-text hover:bg-text hover:border hover:border-text hover:text-bg"
+          >
             akshit.aryan1999@gmail.com
-          </span>
-          <span className="px-10 py-3 border rounded-full font-oswald border-text">
+          </Link>
+          <span className="px-10 py-3 transition-all border rounded-full cursor-pointer font-oswald border-text hover:bg-text hover:border hover:border-text hover:text-bg">
             +91 7700072670
           </span>
         </div>

@@ -5,13 +5,13 @@ import Work from "../components/work";
 const Works = () => {
   return (
     <div className="flex flex-col justify-center w-full min-h-screen p-5 bg-bg">
-      <div className="font-akira text-[3vw] flex space-x-5">
+      <div className="font-akira text-[3.5vw] flex space-x-5">
         <span className="scale-150 animate-spin">
           <Star />
         </span>
         <span>some of my works</span>
       </div>
-      <div className="flex flex-col w-full my-16 border-b border-text">
+      <div className="flex flex-col w-full my-10 border-b border-text">
         <Work />
         <Work />
         <Work />
