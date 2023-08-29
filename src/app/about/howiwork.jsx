@@ -1,16 +1,61 @@
-import React from "react";
+"use client";
+
+import React, { useEffect, useRef } from "react";
 import MacCard from "../components/macCard";
+import { Power4, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const HowIWork = () => {
+  const ease = Power4.easeOut;
+  gsap.registerPlugin(ScrollTrigger);
+  let workTitle = useRef();
+  let workCards = useRef();
+
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.from(workTitle, {
+        x: 200,
+        opacity: 0,
+        ease: ease,
+        scrollTrigger: {
+          trigger: workTitle,
+          start: "top bottom",
+          end: "top center",
+          scrub: 1,
+        },
+      });
+      gsap.from(workCards, {
+        y: 200,
+        ease: ease,
+        opacity: 0,
+        skewY: 12,
+        stagger: {
+          amount: 0.3,
+        },
+        scrollTrigger: {
+          trigger: workCards,
+          start: "top bottom",
+          end: "top 25%",
+          scrub: 0.5,
+        },
+      });
+    });
+    return () => ctx.revert();
+  });
   return (
     <div className="flex flex-col justify-center w-full h-screen px-10 space-y-10">
-      <span className="text-[5vw] font-akira">how i work</span>
+      <span ref={(el) => (workTitle = el)} className="text-[5vw] font-akira">
+        how i work
+      </span>
       <span className="w-full font-oswald text-[24px]">
         I've worked on many projects, some for myself and others for clients.
         Through a lot of trial and error, I've found a way of working that's
-        efficient for everyone involved in the project.
+        <mark> efficient for everyone </mark> involved in the project.
       </span>
-      <div className="flex items-start justify-around w-full">
+      <div
+        ref={(el) => (workCards = el)}
+        className="flex items-start justify-around w-full"
+      >
         <MacCard
           number={1}
           title="Cognizing"

@@ -1,8 +1,11 @@
 import React from "react";
 
-const MacCard = ({ number, title, description }) => {
+const MacCard = ({ number, title, description, ref }) => {
   return (
-    <div className="flex flex-col w-1/5 rounded bg-text">
+    <div
+      ref={(el) => (ref = el)}
+      className="flex flex-col w-1/5 rounded bg-text"
+    >
       <div className="flex items-center justify-start px-5 py-3 space-x-2">
         <div className="w-[15px] h-[15px] bg-red-500 rounded-full" />
         <div className="w-[15px] h-[15px] bg-yellow-500 rounded-full" />

@@ -1,6 +1,61 @@
-import React from "react";
+"use client";
+
+import { Power4, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
+import React, { useEffect, useRef } from "react";
 
 const Experience = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  let pro1 = useRef();
+  let pro2 = useRef();
+  let pro3 = useRef();
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.from(pro1, {
+        x: -500,
+        opacity: 0,
+        ease: Power4.easeOut,
+        stagger: {
+          amount: 0.3,
+        },
+        scrollTrigger: {
+          trigger: pro1,
+          start: "top bottom",
+          end: "top 25%",
+          scrub: 0.5,
+        },
+      });
+      gsap.from(pro2, {
+        x: 500,
+        opacity: 0,
+        ease: Power4.easeOut,
+        stagger: {
+          amount: 0.3,
+        },
+        scrollTrigger: {
+          trigger: pro2,
+          start: "top bottom",
+          end: "top 25%",
+          scrub: 0.5,
+        },
+      });
+      gsap.from(pro3, {
+        x: -500,
+        opacity: 0,
+        ease: Power4.easeOut,
+        stagger: {
+          amount: 0.3,
+        },
+        scrollTrigger: {
+          trigger: pro3,
+          start: "top bottom",
+          end: "top 25%",
+          scrub: 0.5,
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
   return (
     <div className="flex flex-col justify-center w-full min-h-screen">
       <span className="w-full text-center font-akira text-[4vw]">
@@ -8,7 +63,10 @@ const Experience = () => {
       </span>
       <div className="flex w-full mt-10">
         <div className="flex flex-col items-center w-1/2 p-10 border-r border-text">
-          <div className="w-4/5 bg-[#7e7e7e93] rounded-lg flex flex-col space-y-3 items-end p-6">
+          <div
+            ref={(el) => (pro1 = el)}
+            className="w-4/5 bg-[#7e7e7e93] rounded-lg flex flex-col space-y-3 items-end p-6"
+          >
             <span className="font-yeseva text-[2vw]">Designer, Developer</span>
             <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-gray-800">
               OPEN FOR POLICY & IMPACT
@@ -28,7 +86,10 @@ const Experience = () => {
       </div>
       <div className="flex flex-row-reverse w-full">
         <div className="flex flex-col items-center w-1/2 p-10 border-l border-text">
-          <div className="w-4/5 bg-[#7e7e7e93] rounded-lg flex flex-col space-y-3 items-start p-6">
+          <div
+            ref={(el) => (pro2 = el)}
+            className="w-4/5 bg-[#7e7e7e93] rounded-lg flex flex-col space-y-3 items-start p-6"
+          >
             <span className="font-yeseva text-[2vw]">FrontEnd Developer</span>
             <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-gray-800">
               moneyHop, a cross-border payment solution
@@ -50,6 +111,40 @@ const Experience = () => {
         </div>
         <div className="flex items-center h-full p-10 scale-150">
           <img src="/images/moneyhop.png" className="w-1/2" />
+        </div>
+      </div>
+      <div className="flex w-full">
+        <div className="flex flex-col items-center w-1/2 border-r border-text">
+          <div
+            ref={(el) => (pro3 = el)}
+            className="w-4/5 bg-[#7e7e7e66] rounded-lg flex flex-col space-y-3 items-end p-6"
+          >
+            <span className="font-yeseva text-[2vw]">Co-Founder, CTO</span>
+            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-gray-800">
+              PROJECT STATECRAFT, a student-driven policy think tank
+            </span>
+            <span className="font-oswald text-[1vw]">
+              May 2020 - November 2021
+            </span>
+            <span className="text-right font-oswald font-extralight">
+              - Spearheaded the technology sector, overseeing strategic
+              initiatives. <br />- Orchestrated the development and upkeep of
+              the PSC website, serving as a hub for research papers,
+              newsletters, and podcasts. <br />- Leveraged the Adobe Creative
+              Suite to craft compelling visuals, including logo design,
+              Instagram Reels video editing, engaging social media posts,
+              captivating video trailers, eye-catching posters, and engaging
+              podcasts. <br />- Innovatively integrated design and technology to
+              enhance the organization's online presence and engagement. <br />
+              <br />
+              This experience underscores my proficiency in not only leading
+              technological aspects but also my creative prowess in utilizing
+              design tools to communicate and engage effectively.
+            </span>
+          </div>
+        </div>
+        <div className="flex items-center justify-center h-full p-10 scale-150">
+          <img src="/images/psc.jpeg" className="w-1/2" />
         </div>
       </div>
     </div>
