@@ -1,11 +1,6 @@
-import {
-  ArrowBackIosNew,
-  ArrowCircleDown,
-  Star,
-  StarBorderOutlined,
-} from "@mui/icons-material";
+import { ArrowCircleDown, Star } from "@mui/icons-material";
 import React from "react";
-import Work from "./components/work";
+import Work from "../components/work";
 
 const Works = () => {
   return (
@@ -22,7 +17,7 @@ const Works = () => {
         <Work />
         <Work />
       </div>
-      <div className="flex items-center space-x-4">
+      <div className="flex items-center justify-center w-full -mt-5 space-x-4">
         <span className="font-oswald text-[1.3vw] font-extrabold ">
           Check out all projects
         </span>

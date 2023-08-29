@@ -1,9 +1,9 @@
-import AboutHome from "./about";
-import Contact from "./contact";
-import Footer from "./footer";
-import Header from "./header";
-import HomePage from "./home";
-import Works from "./works";
+import AboutHome from "./home/about";
+import Contact from "./home/contact";
+import Footer from "./components/footer";
+import Header from "./components/header";
+import HomePage from "./home/home";
+import Works from "./home/works";
 
 export default function Home() {
   return (

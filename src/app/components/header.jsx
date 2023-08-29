@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="z-50 flex justify-between w-full px-2 py-3 border-b font-yeseva border-text">
+    <div className="fixed z-50 flex justify-between w-full px-2 py-3 border-b font-yeseva bg-[#1a1a1a9f] border-text">
       <span className="text-[24px]">Akshit Aryan</span>
       <div className="flex items-center text-[20px] space-x-2">
         <span className="cursor-pointer hover:underline">about,</span>

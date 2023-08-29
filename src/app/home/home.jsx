@@ -11,7 +11,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-col justify-center w-full min-h-screen px-5 -mt-[3rem]">
+    <div className="flex flex-col justify-center w-full min-h-screen px-5">
       <div className="flex flex-col w-full">
         <span className="w-full text-left font-akira text-[13.5vw]">
           akshit
