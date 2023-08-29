@@ -5,10 +5,10 @@ const HowIWork = () => {
   return (
     <div className="flex flex-col justify-center w-full h-screen px-10 space-y-10">
       <span className="text-[5vw] font-akira">how i work</span>
-      <span className="w-full font-oswald text-[24px] tracking-[5px]">
-        I have made a lot of projects (personal and paid for) and through the
-        brutal process of trial and error, I have figured out a process of
-        working that is the most efficient for all stakeholders in the project.
+      <span className="w-full font-oswald text-[24px]">
+        I've worked on many projects, some for myself and others for clients.
+        Through a lot of trial and error, I've found a way of working that's
+        efficient for everyone involved in the project.
       </span>
       <div className="flex items-start justify-around w-full">
         <MacCard

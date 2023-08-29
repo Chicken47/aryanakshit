@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import React from "react";
 
@@ -14,7 +15,12 @@ const Header = () => {
         <Link className="cursor-pointer hover:underline" href="/works">
           works,
         </Link>
-        <span className="cursor-pointer hover:underline">contact</span>
+        <span
+          onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+          className="cursor-pointer hover:underline"
+        >
+          contact
+        </span>
       </div>
     </div>
   );

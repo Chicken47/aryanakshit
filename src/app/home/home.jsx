@@ -3,25 +3,79 @@
 import {
   AlternateEmail,
   DocumentScanner,
-  Email,
   GitHub,
   LinkedIn,
 } from "@mui/icons-material";
-import React from "react";
+import React, { useEffect } from "react";
+import { Power3, gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 
 const HomePage = () => {
+  gsap.registerPlugin(ScrollTrigger);
+  const ease = Power3.easeInOut();
+  useEffect(() => {
+    let ctx = gsap.context(() => {
+      const tl = gsap.timeline();
+      tl.fromTo(
+        ".home-akshit",
+        {
+          yPercent: -130,
+        },
+        {
+          yPercent: 0,
+          ease: ease,
+        },
+        "1"
+      );
+      tl.fromTo(
+        ".home-aryan",
+        {
+          yPercent: 130,
+        },
+        {
+          yPercent: 0,
+          ease: ease,
+        },
+        "1"
+      );
+      tl.fromTo(
+        ".location-links",
+        {
+          xPercent: -120,
+        },
+        {
+          xPercent: 0,
+          ease: ease,
+        },
+        "2"
+      );
+      tl.fromTo(
+        ".home-right",
+        {
+          xPercent: 120,
+        },
+        {
+          xPercent: 0,
+          ease: ease,
+        },
+        "2"
+      );
+    });
+    return () => ctx.revert();
+  }, []);
+
   return (
     <div className="flex flex-col justify-center w-full min-h-screen px-5">
-      <div className="flex flex-col w-full">
-        <span className="w-full text-left font-akira text-[13.5vw]">
+      <div className="flex flex-col w-full overflow-hidden">
+        <span className="w-full text-left font-akira text-[13.5vw] home-akshit overflow-hidden">
           akshit
         </span>
-        <span className="w-full text-right font-akira text-[13.5vw] -mt-[8vw]">
+        <span className="w-full text-right font-akira text-[13.5vw] -mt-[8vw] home-aryan">
           aryan
         </span>
       </div>
       <div className="flex items-center justify-between w-full">
-        <div className="flex flex-col items-center justify-center w-1/5">
+        <div className="flex flex-col items-center justify-center w-1/5 location-links">
           <div className="w-full flex pl-5 pr-10 py-5 text-left justify-between rounded-r-full font-oswald text-[1.8rem] bg-text text-bg">
             <span>
               Located in <br /> Mumbai, IN
@@ -60,7 +114,7 @@ const HomePage = () => {
             </a>
           </div>
         </div>
-        <div className="flex flex-col items-end w-6/12">
+        <div className="flex flex-col items-end w-6/12 home-right">
           <span className="font-oswald text-[2vw] w-full text-right tracking-wide">
             Creative <mark> UI/UX Designer </mark> and
             <mark> Front-End Web Developer </mark>, dedicated to crafting
