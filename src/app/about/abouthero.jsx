@@ -79,7 +79,7 @@ const AboutHero = () => {
             style={{ zoom: "400%" }}
             target="_blank"
             href={
-              "https://drive.google.com/file/d/1u1315G7bV9C872O4mElZbZCLtILaMUCu/view?usp=drive_link"
+              "https://drive.google.com/file/d/1dr3qgB9nwTHhap18uz6mbF9KsA-9tUrl/view?usp=sharing"
             }
             className="transition-all duration-500 group-hover:scale-125"
           >

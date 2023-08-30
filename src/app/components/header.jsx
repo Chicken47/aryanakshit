@@ -9,18 +9,15 @@ const Header = () => {
         Akshit Aryan
       </Link>
       <div className="flex items-center text-[20px] space-x-2">
-        <Link className="cursor-pointer hover:underline" href="/about">
+        <Link className="cursor-pointer hover:line-through" href="/about">
           about,
         </Link>
-        <Link className="cursor-pointer hover:underline" href="/works">
+        <Link className="cursor-pointer hover:line-through" href="/works">
           works,
         </Link>
-        <span
-          onClick={() => window.scrollTo(0, document.body.scrollHeight)}
-          className="cursor-pointer hover:underline"
-        >
+        <Link href="/contact" className="cursor-pointer hover:line-through">
           contact
-        </span>
+        </Link>
       </div>
     </div>
   );

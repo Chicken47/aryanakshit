@@ -101,7 +101,7 @@ const HomePage = () => {
             </a>
             <a
               target="_blank"
-              href="https://drive.google.com/file/d/1u1315G7bV9C872O4mElZbZCLtILaMUCu/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1dr3qgB9nwTHhap18uz6mbF9KsA-9tUrl/view?usp=sharing"
               className="transition-all duration-500 scale-150 cursor-pointer hover:rotate-12"
             >
               <DocumentScanner />
