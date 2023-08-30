@@ -32,7 +32,7 @@ const HowIWork = () => {
         scrollTrigger: {
           trigger: workCards,
           start: "top bottom",
-          end: "top 10%",
+          end: "center 40%",
           scrub: 0.5,
         },
       });
@@ -45,9 +45,10 @@ const HowIWork = () => {
         how i work
       </span>
       <span className="w-full font-oswald text-[24px]">
-        I've worked on many projects, some for myself and others for clients.
-        Through a lot of trial and error, I've found a way of working that's
-        <mark> efficient for everyone </mark> involved in the project.
+        Having undertaken numerous projects, both personal and commissioned,
+        I've navigated the rigorous terrain of trial and error. This journey has
+        led me to uncover an <mark> optimized workflow </mark> that{" "}
+        <mark> maximizes efficiency </mark> for all project stakeholders.
       </span>
       <div
         ref={(el) => (workCards = el)}

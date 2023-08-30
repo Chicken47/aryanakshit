@@ -9,7 +9,9 @@ const Experience = () => {
   let pro1 = useRef();
   let pro2 = useRef();
   let pro3 = useRef();
+
   useEffect(() => {
+    const orgLogos = gsap.utils.toArray("#org-logo");
     let ctx = gsap.context(() => {
       gsap.from(pro1, {
         x: -500,
@@ -53,6 +55,19 @@ const Experience = () => {
           scrub: 0.5,
         },
       });
+      orgLogos.forEach((logo) => {
+        gsap.from(logo, {
+          scale: 0.2,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: logo,
+            start: "top bottom",
+            scrub: true,
+            end: "bottom center",
+            // markers: true,
+          },
+        });
+      });
     });
     return () => ctx.revert();
   }, []);
@@ -82,8 +97,8 @@ const Experience = () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center h-full p-10">
-          <img src="/images/Union.png" className="w-1/2" />
+        <div id="org-logo" className="flex items-center h-full p-10">
+          <img src="/images/Union.png" className="w-1/2 org-logo" />
         </div>
       </div>
       <div className="flex flex-row-reverse w-full">
@@ -111,8 +126,8 @@ const Experience = () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center h-full p-10 scale-150">
-          <img src="/images/moneyhop.png" className="w-1/2" />
+        <div id="org-logo" className="flex items-center h-full p-10 scale-150">
+          <img src="/images/moneyhop.png" className="w-1/2 org-logo" />
         </div>
       </div>
       <div className="flex w-full">
@@ -141,8 +156,11 @@ const Experience = () => {
             </span>
           </div>
         </div>
-        <div className="flex items-center justify-center h-full p-10 scale-150">
-          <img src="/images/psc.jpeg" className="w-1/2" />
+        <div
+          id="org-logo"
+          className="flex items-center justify-center h-full p-10 scale-150"
+        >
+          <img src="/images/psc.jpeg" className="w-1/2 org-logo" />
         </div>
       </div>
     </div>

@@ -38,10 +38,10 @@ const Works = () => {
           amount: 0.3,
         },
         scrollTrigger: {
-          trigger: bottomToTop,
+          trigger: workTwo,
           start: "top bottom",
-          end: "top 25%",
-          scrub: 0.5,
+          end: "top center",
+          scrub: 2,
         },
       });
     });

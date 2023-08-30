@@ -70,7 +70,7 @@ const ServicesAbout = () => {
         >
           <ServiceCard text={"Custom Website Development"} />
           <ServiceCard text={"Frontend Performance Optimization"} />
-          <ServiceCard text={"Akshit Aryan"} />
+          <ServiceCard text={"Usability Testing and Optimization"} />
         </div>
       </div>
     </div>

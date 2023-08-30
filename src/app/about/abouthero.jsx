@@ -72,7 +72,7 @@ const AboutHero = () => {
         ref={(el) => {
           lowerRow = el;
         }}
-        className="flex items-center justify-between w-full px-[7vw]"
+        className="flex items-center justify-between w-full px-[15vw]"
       >
         <div className="flex items-center justify-center rounded-full group w-[13vw] h-[13vw] border-2 border-text">
           <Link
