@@ -1,9 +1,12 @@
+"use client";
+
+import { WhatsApp } from "@mui/icons-material";
 import Link from "next/link";
 import React from "react";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col justify-between w-full p-5 space-y-10 bg-bg">
+    <div className="flex flex-col justify-between w-full p-5 space-y-10">
       <div className="flex flex-col items-start w-full">
         <div className="flex flex-col items-start w-full">
           <span className="font-yeseva text-[3vw] w-full space-x-16">
@@ -55,6 +58,7 @@ const Contact = () => {
             akshit.aryan1999@gmail.com
           </Link>
           <span className="px-10 py-3 transition-all border rounded-full cursor-pointer font-oswald border-text hover:bg-text hover:border hover:border-text hover:text-bg">
+            <WhatsApp />
             +91 7700072670
           </span>
         </div>

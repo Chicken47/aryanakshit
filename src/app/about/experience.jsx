@@ -80,10 +80,10 @@ const Experience = () => {
         <div className="flex flex-col items-center w-1/2 p-10 border-r border-text">
           <div
             ref={(el) => (pro1 = el)}
-            className="w-4/5 bg-[#7e7e7e93] rounded-lg flex flex-col space-y-3 items-end p-6"
+            className="w-4/5 bg-[#00000093] border rounded-lg flex flex-col space-y-3 items-end p-6"
           >
             <span className="font-yeseva text-[2vw]">Designer, Developer</span>
-            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-gray-800">
+            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-blue-500">
               OPEN FOR POLICY & IMPACT
             </span>
             <span className="font-oswald text-[1vw]">May 2023 - June 2023</span>
@@ -105,10 +105,10 @@ const Experience = () => {
         <div className="flex flex-col items-center w-1/2 p-10 border-l border-text">
           <div
             ref={(el) => (pro2 = el)}
-            className="w-4/5 bg-[#7e7e7e93] rounded-lg flex flex-col space-y-3 items-start p-6"
+            className="w-4/5 bg-[#00000093] border rounded-lg flex flex-col space-y-3 items-start p-6"
           >
             <span className="font-yeseva text-[2vw]">FrontEnd Developer</span>
-            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-gray-800">
+            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-blue-500">
               moneyHop, a cross-border payment solution
             </span>
             <span className="font-oswald text-[1vw]">Feb 2022 - July 2023</span>
@@ -134,10 +134,10 @@ const Experience = () => {
         <div className="flex flex-col items-center w-1/2 border-r border-text">
           <div
             ref={(el) => (pro3 = el)}
-            className="w-4/5 bg-[#7e7e7e66] rounded-lg flex flex-col space-y-3 items-end p-6"
+            className="w-4/5 bg-[#00000093] border rounded-lg flex flex-col space-y-3 items-end p-6"
           >
             <span className="font-yeseva text-[2vw]">Co-Founder, CTO</span>
-            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-gray-800">
+            <span className="font-oswald text-[1.2vw] tracking-widest font-extrabold text-blue-500">
               PROJECT STATECRAFT, a student-driven policy think tank
             </span>
             <span className="font-oswald text-[1vw]">

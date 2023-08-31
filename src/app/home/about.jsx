@@ -3,6 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import { Power4, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import BustModel from "./BustModel";
 
 const AboutHome = () => {
   gsap.registerPlugin(ScrollTrigger);
@@ -61,7 +62,7 @@ const AboutHome = () => {
   }, []);
 
   return (
-    <div className="w-full h-screen bg-bg px-[7.5vw] flex">
+    <div className="w-full items-center h-screen px-[7.5vw] flex">
       <div
         id="left"
         className="flex flex-col justify-center w-1/2 h-full px-10 overflow-hidden"
@@ -85,7 +86,7 @@ const AboutHome = () => {
         </div>
         <span
           ref={(el) => (paraRef = el)}
-          className="font-oswald text-[1.2rem] tracking-wide"
+          className="font-oswald font-light text-[1.2rem] tracking-wide"
         >
           I am a UX/UI designer based in India. I’m a relatively budding new
           person in this field with 2 years of experience. As a designer I love
@@ -102,9 +103,17 @@ const AboutHome = () => {
           <br />
           Other than that I love music, cycling, badminton and photography
         </span>
+        <div className="py-5 font-oswald">
+          - I used this cool 3D model of an abstract sculpture and animated it
+          in my website. <br />
+          - You can drag it around with your mouse to explore it from different
+          angles. <br />- I am still learning about 3D and web development, but
+          I am excited to see what I can create in the future.
+        </div>
       </div>
-      <div id="right" className="w-1/2 pr-3 text-left font-oswald">
-        .
+      <div id="right" className="w-1/2 h-full overflow-hidden">
+        <div className="h-[12vw]"></div>
+        {/* <BustModel /> */}
       </div>
     </div>
   );

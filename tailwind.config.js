@@ -21,6 +21,16 @@ module.exports = {
         yeseva: ['var(--font-yeseva)'],
         oswald: ['var(--font-oswald)'],
       },
+      keyframes: {
+        "slow-spin": {
+          "0%": { transform: "rotate(0deg)" },
+          "100%": { transform: "rotate(360deg)" },
+        },
+      },
+      // Configure animation duration
+      animation: {
+        "slow-spin": "slow-spin 10s linear infinite", // 5s is the duration of the animation
+      },
     },
   },
   plugins: [],
