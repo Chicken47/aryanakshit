@@ -63,7 +63,7 @@ const Works = () => {
           }}
         >
           <Work
-            title={"Personal Website v2"}
+            title={"Payment Dashboard"}
             role={"(ui/ux design, development)"}
           />
         </div>
@@ -73,7 +73,7 @@ const Works = () => {
           }}
         >
           <Work
-            title={"Personal Website v1"}
+            title={"Personal Website v2"}
             role={"(ui/ux design, development)"}
           />
         </div>
@@ -83,7 +83,7 @@ const Works = () => {
           }}
         >
           <Work
-            title={"Open for Policy & Impact"}
+            title={"Personal Website v1"}
             role={"(ui/ux design, development)"}
           />
         </div>
@@ -92,8 +92,18 @@ const Works = () => {
             workFour = el;
           }}
         >
-          <Work title={"HopRemit"} role={"(development)"} />
+          <Work
+            title={"Open for Policy & Impact"}
+            role={"(ui/ux design, development)"}
+          />
         </div>
+        {/* <div
+          ref={(el) => {
+            workFour = el;
+          }}
+        >
+          <Work title={"HopRemit"} role={"(development)"} />
+        </div> */}
       </div>
       <div className="flex items-center justify-center w-full -mt-5 space-x-4">
         <span className="font-oswald text-[1.3vw] font-extrabold ">

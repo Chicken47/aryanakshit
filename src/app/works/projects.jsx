@@ -4,6 +4,29 @@ const Projects = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen space-y-20 my-[8vw]">
       <div className="font-akira text-[6vw] px-10">Projects</div>
+      <div className="flex flex-row-reverse w-full justify-evenly">
+        <div className="flex flex-col justify-between w-1/4 h-full">
+          <span className="font-yeseva text-[3vw]">Payment Dashboard</span>
+          <span className="font-oswald font-extrabold tracking-[5px]">
+            August 2023
+          </span>
+          <span className="font-light font-oswald">
+            - A better UI including dark mode themes that I've been trying out
+            lately, giving components of the page a glassmorphism effect. <br />
+            - The table is responsive with all fields sortable. <br />- Dynamic
+            Routing was implemented for the transaction row details. <br />-
+            Recoil State Management system implemented for a more robust and
+            scalable SMS.
+          </span>
+          <button className="flex items-center justify-center w-1/2 px-6 py-2 rounded-full bg-text text-bg">
+            Explore
+          </button>
+        </div>
+        <img
+          src="/images/payment.png"
+          className="w-1/2 border border-text rounded-3xl"
+        />
+      </div>
       <div className="flex w-full justify-evenly">
         <div className="flex flex-col justify-between w-1/4 h-full">
           <span className="font-yeseva text-[3vw]">Personal Website v2</span>
