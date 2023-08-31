@@ -14,11 +14,11 @@ const Works = () => {
   let bottomToTop = useRef();
 
   const homeWorks = [
-    {
-      title: "Payment Dashboard",
-      role: "(ux/ui design, development)",
-      slug: "/works/pay",
-    },
+    // {
+    //   title: "Payment Dashboard",
+    //   role: "(ux/ui design, development)",
+    //   slug: "/works/pay",
+    // },
     {
       title: "Personal Website v2",
       role: "(ux/ui design, development)",

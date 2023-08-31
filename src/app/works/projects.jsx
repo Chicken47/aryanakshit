@@ -8,14 +8,14 @@ const Projects = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const projectList = [
-    {
-      title: "Payment Dashboard",
-      date: "August 2023",
-      desc: "A better UI including dark mode themes that I've been trying out lately, giving components of the page a glassmorphism effect. The table is responsive with all fields sortable. Dynamic Routing was implemented for the transaction row details. Recoil State Management system implemented for a more robust and scalable SMS. Used REST APIs to get all of the data. Here is the source code. Deployed it here using Vercel.",
-      img: "/images/payment.png",
-      slug: "/works/pay",
-      reverse: false,
-    },
+    // {
+    //   title: "Payment Dashboard",
+    //   date: "August 2023",
+    //   desc: "A better UI including dark mode themes that I've been trying out lately, giving components of the page a glassmorphism effect. The table is responsive with all fields sortable. Dynamic Routing was implemented for the transaction row details. Recoil State Management system implemented for a more robust and scalable SMS. Used REST APIs to get all of the data. Here is the source code. Deployed it here using Vercel.",
+    //   img: "/images/payment.png",
+    //   slug: "/works/pay",
+    //   reverse: false,
+    // },
     {
       title: "Personal Website v2",
       date: "August 2023",
