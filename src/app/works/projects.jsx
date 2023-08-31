@@ -83,7 +83,7 @@ const Projects = () => {
         return (
           <div
             key={index}
-            ref={projectRefs[index]}
+            // ref={projectRefs[index]}
             className={
               item.reverse
                 ? "flex flex-row-reverse w-full justify-evenly"
