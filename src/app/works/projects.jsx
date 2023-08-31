@@ -42,39 +42,39 @@ const Projects = () => {
     },
   ];
 
-  const projectRefs = projectList.map(() => useRef(null));
-  const imageRefs = projectList.map(() => useRef(null));
+  // const projectRefs = projectList.map(() => useRef(null));
+  // const imageRefs = projectList.map(() => useRef(null));
 
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      projectRefs.forEach((ref, index) => {
-        gsap.from(ref.current, {
-          opacity: 0,
-          x: "100vw",
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top bottom",
-            end: "top center",
-            scrub: true,
-          },
-        });
-      });
-      imageRefs.forEach((ref, index) => {
-        gsap.from(ref.current, {
-          opacity: 0.5,
-          duration: 2,
-          scale: 0.5,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top bottom",
-            end: "top center",
-            scrub: true,
-          },
-        });
-      });
-    });
-    return () => ctx.revert();
-  }, []);
+  // useEffect(() => {
+  //   let ctx = gsap.context(() => {
+  //     projectRefs.forEach((ref, index) => {
+  //       gsap.from(ref.current, {
+  //         opacity: 0,
+  //         x: "100vw",
+  //         scrollTrigger: {
+  //           trigger: ref.current,
+  //           start: "top bottom",
+  //           end: "top center",
+  //           scrub: true,
+  //         },
+  //       });
+  //     });
+  //     imageRefs.forEach((ref, index) => {
+  //       gsap.from(ref.current, {
+  //         opacity: 0.5,
+  //         duration: 2,
+  //         scale: 0.5,
+  //         scrollTrigger: {
+  //           trigger: ref.current,
+  //           start: "top bottom",
+  //           end: "top center",
+  //           scrub: true,
+  //         },
+  //       });
+  //     });
+  //   });
+  //   return () => ctx.revert();
+  // }, []);
 
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen space-y-20 my-[8vw]">
@@ -105,7 +105,7 @@ const Projects = () => {
             </div>
             <img
               src={item.img}
-              ref={imageRefs[index]}
+              // ref={imageRefs[index]}
               className="w-1/2 border border-text rounded-3xl"
             />
           </div>

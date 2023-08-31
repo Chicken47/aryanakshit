@@ -36,7 +36,7 @@ const Works = () => {
     },
   ];
 
-  const projectRefs = homeWorks.map(() => useRef(null));
+  // const projectRefs = homeWorks.map(() => useRef(null));
 
   useEffect(() => {
     let ctx = gsap.context(() => {
@@ -50,19 +50,19 @@ const Works = () => {
           scrub: 1,
         },
       });
-      projectRefs.forEach((ref, index) => {
-        gsap.from(ref.current, {
-          opacity: 0,
-          y: -100,
-          ease: ease,
-          scrollTrigger: {
-            trigger: ref.current,
-            start: "top bottom",
-            end: "top center",
-            scrub: true,
-          },
-        });
-      });
+      // projectRefs.forEach((ref, index) => {
+      //   gsap.from(ref.current, {
+      //     opacity: 0,
+      //     y: -100,
+      //     ease: ease,
+      //     scrollTrigger: {
+      //       trigger: ref.current,
+      //       start: "top bottom",
+      //       end: "top center",
+      //       scrub: true,
+      //     },
+      //   });
+      // });
     });
     return () => ctx.revert();
   }, []);
@@ -78,7 +78,10 @@ const Works = () => {
       <div className="flex flex-col w-full my-10 border-b border-text">
         {homeWorks?.map((item, index) => {
           return (
-            <div key={index} ref={projectRefs[index]}>
+            <div
+              key={index}
+              // ref={projectRefs[index]}
+            >
               <Work title={item.title} role={item.role} slug={item.slug} />
             </div>
           );
