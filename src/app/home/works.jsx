@@ -87,11 +87,14 @@ const Works = () => {
           );
         })}
       </div>
-      <div className="flex items-center justify-center w-full -mt-5 space-x-4">
-        <Link href="/works" className="font-oswald text-[1.3vw] font-extrabold">
+      <div className="flex items-center justify-center w-full -mt-5 space-x-4 cursor-pointer group">
+        <Link
+          href="/works"
+          className="font-oswald text-[1.3vw] font-extrabold group-hover:underline"
+        >
           Check out all projects
         </Link>
-        <span className="scale-150 -rotate-90">
+        <span className="transition-all -rotate-90 group-hover:scale-150">
           <ArrowCircleDown />
         </span>
       </div>
