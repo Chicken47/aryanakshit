@@ -36,6 +36,17 @@ const AboutHome = () => {
           scrub: 2,
         },
       });
+      gsap.from(".text-description", {
+        // x: 300,
+        // ease: ease,
+        opacity: 0,
+        scrollTrigger: {
+          trigger: ".text-description",
+          start: "top bottom",
+          end: "top 75%",
+          scrub: true,
+        },
+      });
       gsap.from(aryanRef, {
         x: 500,
         ease: ease,
@@ -103,7 +114,7 @@ const AboutHome = () => {
           <br />
           Other than that I love music, cycling, badminton and photography
         </span>
-        <div className="py-5 font-oswald">
+        <div className="p-5 mt-5 bg-[#3cafaf24] rounded-lg font-oswald text-description">
           - I used this cool 3D model of an abstract sculpture and animated it
           in my website. <br />
           - You can drag it around with your mouse to explore it from different

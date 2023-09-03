@@ -44,7 +44,7 @@ const ServicesAbout = () => {
       });
     });
     return () => ctx.revert();
-  });
+  }, []);
   return (
     <div className="flex flex-col items-center justify-center w-full h-screen space-y-5">
       <span className="w-full text-center font-akira text-[3vw]">

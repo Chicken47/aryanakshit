@@ -38,7 +38,7 @@ const HowIWork = () => {
       });
     });
     return () => ctx.revert();
-  });
+  }, []);
   return (
     <div className="flex flex-col justify-center w-full h-screen px-10 space-y-10">
       <span ref={(el) => (workTitle = el)} className="text-[5vw] font-akira">

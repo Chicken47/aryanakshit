@@ -11,7 +11,7 @@ const Works = () => {
   const ease = Power4.easeInOut;
 
   gsap.registerPlugin(ScrollTrigger);
-  let bottomToTop = useRef();
+  // let bottomToTop = useRef();
 
   const homeWorks = [
     // {
@@ -40,16 +40,16 @@ const Works = () => {
 
   useEffect(() => {
     let ctx = gsap.context(() => {
-      gsap.from(bottomToTop, {
-        y: 100,
-        ease: ease,
-        scrollTrigger: {
-          trigger: bottomToTop,
-          start: "top bottom-=100",
-          end: "top 80%",
-          scrub: 1,
-        },
-      });
+      // gsap.from(bottomToTop, {
+      //   y: 100,
+      //   ease: ease,
+      //   scrollTrigger: {
+      //     trigger: bottomToTop,
+      //     start: "top bottom-=100",
+      //     end: "top 80%",
+      //     scrub: 1,
+      //   },
+      // });
       // projectRefs.forEach((ref, index) => {
       //   gsap.from(ref.current, {
       //     opacity: 0,
@@ -73,7 +73,11 @@ const Works = () => {
         <span className="scale-150 animate-spin">
           <Star />
         </span>
-        <span ref={(el) => (bottomToTop = el)}>some of my works</span>
+        <span
+        // ref={(el) => (bottomToTop = el)}
+        >
+          some of my works
+        </span>
       </div>
       <div className="flex flex-col w-full my-10 border-b border-text">
         {homeWorks?.map((item, index) => {
