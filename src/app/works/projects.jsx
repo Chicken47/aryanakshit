@@ -8,14 +8,6 @@ const Projects = () => {
   gsap.registerPlugin(ScrollTrigger);
 
   const projectList = [
-    // {
-    //   title: "Payment Dashboard",
-    //   date: "August 2023",
-    //   desc: "A better UI including dark mode themes that I've been trying out lately, giving components of the page a glassmorphism effect. The table is responsive with all fields sortable. Dynamic Routing was implemented for the transaction row details. Recoil State Management system implemented for a more robust and scalable SMS. Used REST APIs to get all of the data. Here is the source code. Deployed it here using Vercel.",
-    //   img: "/images/payment.png",
-    //   slug: "/works/pay",
-    //   reverse: false,
-    // },
     {
       title: "Personal Website v2",
       date: "August 2023",
@@ -41,40 +33,6 @@ const Projects = () => {
       reverse: true,
     },
   ];
-
-  // const projectRefs = projectList.map(() => useRef(null));
-  // const imageRefs = projectList.map(() => useRef(null));
-
-  // useEffect(() => {
-  //   let ctx = gsap.context(() => {
-  //     projectRefs.forEach((ref, index) => {
-  //       gsap.from(ref.current, {
-  //         opacity: 0,
-  //         x: "100vw",
-  //         scrollTrigger: {
-  //           trigger: ref.current,
-  //           start: "top bottom",
-  //           end: "top center",
-  //           scrub: true,
-  //         },
-  //       });
-  //     });
-  //     imageRefs.forEach((ref, index) => {
-  //       gsap.from(ref.current, {
-  //         opacity: 0.5,
-  //         duration: 2,
-  //         scale: 0.5,
-  //         scrollTrigger: {
-  //           trigger: ref.current,
-  //           start: "top bottom",
-  //           end: "top center",
-  //           scrub: true,
-  //         },
-  //       });
-  //     });
-  //   });
-  //   return () => ctx.revert();
-  // }, []);
 
   return (
     <div className="flex flex-col items-center justify-center w-full min-h-screen space-y-20 my-[8vw]">

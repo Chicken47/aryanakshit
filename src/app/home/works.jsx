@@ -1,71 +1,38 @@
-"use client";
-
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { ArrowCircleDown, Star } from "@mui/icons-material";
 import Work from "../components/work";
-import { Power4, gsap } from "gsap";
-import { ScrollTrigger } from "gsap/all";
 import Link from "next/link";
 
 const Works = () => {
-  const ease = Power4.easeInOut;
-
-  gsap.registerPlugin(ScrollTrigger);
-  // let bottomToTop = useRef();
-
   const homeWorks = [
-    // {
-    //   title: "Payment Dashboard",
-    //   role: "(ux/ui design, development)",
-    //   slug: "/works/pay",
-    // },
     {
       title: "Personal Website v2",
-      role: "(ux/ui design, development)",
+      date: "August 2023",
+      desc: "Designed and developed a new personal portfolio website. Used the latest NextJS 13 and employed its dynamic app routing and server - side components.  Used GSAP for beautiful animations and ThreeJS for 3D incorporation.",
+      img: "/images/portfoliov2.png",
       slug: "/works/v2",
+      role: "(ux/ui design, development)",
+      reverse: true,
     },
     {
       title: "Personal Website v1",
-      role: "(ux/ui design, development)",
+      date: "August 2023",
+      desc: "Designed and developed a new personal portfolio website. Used the latest NextJS 13 and employed its dynamic app routing and server - side components.  Employed the use of REST APIs to get NASA Photo of the Day, A Quote Generator and Idea Generator for bored people.",
+      img: "/images/portfoliov1.png",
       slug: "/works/v1",
+      role: "(ux/ui design, development)",
+      reverse: false,
     },
     {
       title: "Open for Policy & Impact",
+      date: "February 2022 - July 2023",
+      desc: "Undertook an independent initiative to design and develop a website for OPI, a distinguished consulting firm.  This endeavour allowed me to explore both design and development aspects, contributing to a holistic digital solution.",
+      img: "/images/opiSc.png",
       role: "(ux/ui design, development)",
       slug: "/works/opi",
+      reverse: true,
     },
   ];
-
-  // const projectRefs = homeWorks.map(() => useRef(null));
-
-  useEffect(() => {
-    let ctx = gsap.context(() => {
-      // gsap.from(bottomToTop, {
-      //   y: 100,
-      //   ease: ease,
-      //   scrollTrigger: {
-      //     trigger: bottomToTop,
-      //     start: "top bottom-=100",
-      //     end: "top 80%",
-      //     scrub: 1,
-      //   },
-      // });
-      // projectRefs.forEach((ref, index) => {
-      //   gsap.from(ref.current, {
-      //     opacity: 0,
-      //     y: -100,
-      //     ease: ease,
-      //     scrollTrigger: {
-      //       trigger: ref.current,
-      //       start: "top bottom",
-      //       end: "top center",
-      //       scrub: true,
-      //     },
-      //   });
-      // });
-    });
-    return () => ctx.revert();
-  }, []);
 
   return (
     <div className="flex flex-col justify-center w-full min-h-screen p-5">
@@ -73,20 +40,18 @@ const Works = () => {
         <span className="scale-150 animate-spin">
           <Star />
         </span>
-        <span
-        // ref={(el) => (bottomToTop = el)}
-        >
-          some of my works
-        </span>
+        <span>some of my works</span>
       </div>
       <div className="flex flex-col w-full my-10 border-b border-text">
         {homeWorks?.map((item, index) => {
           return (
-            <div
-              key={index}
-              // ref={projectRefs[index]}
-            >
-              <Work title={item.title} role={item.role} slug={item.slug} />
+            <div key={index}>
+              <Work
+                title={item.title}
+                role={item.role}
+                slug={item.slug}
+                img={item.img}
+              />
             </div>
           );
         })}
@@ -96,7 +61,7 @@ const Works = () => {
           href="/works"
           className="font-oswald text-[1.3vw] font-extrabold group-hover:underline"
         >
-          Check out all projects
+          Check out all my projects
         </Link>
         <span className="transition-all -rotate-90 group-hover:scale-150">
           <ArrowCircleDown />
