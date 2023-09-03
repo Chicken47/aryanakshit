@@ -99,20 +99,11 @@ const AboutHome = () => {
           ref={(el) => (paraRef = el)}
           className="font-oswald font-light text-[1.2rem] tracking-wide"
         >
-          I am a UX/UI designer based in India. I’m a relatively budding new
-          person in this field with 2 years of experience. As a designer I love
-          making <mark>minimal and brutalist</mark> designs.
-          <br />
-          <br />
-          As a developer, I use <mark>seamless animations</mark> to enhance
-          designs, generating a much better user experience, increasing user
-          retention.
-          <br />
-          <br />
-          Lately, I’m including <mark>3d Elements</mark> into web designs and
-          browsers.
-          <br />
-          Other than that I love music, cycling, badminton and photography
+          I'm a UX/UI designer from India with 2 years of experience. I
+          specialize in minimal and brutalist designs, incorporating seamless
+          animations to improve user experience and retention. <br />
+          I've also been experimenting with 3D elements in web design. Outside
+          of work, I enjoy music, cycling, badminton, and photography.
         </span>
         <div className="p-5 mt-5 bg-[#3cafaf24] rounded-lg font-oswald text-description">
           - I used this cool 3D model of an abstract sculpture and animated it

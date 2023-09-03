@@ -8,7 +8,7 @@ const BustModel = () => {
   const RotatingMesh = () => {
     const modelRef = useRef();
     useFrame(({ clock }) => {
-      modelRef.current.rotation.y = clock.getElapsedTime() * 1.2;
+      modelRef.current.rotation.y = clock.getElapsedTime();
     });
     return <Model modelRef={modelRef} />;
   };

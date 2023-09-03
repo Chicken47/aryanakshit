@@ -74,7 +74,7 @@ const HomePage = () => {
         <div className="flex flex-col items-center justify-center w-1/5 location-links">
           <div className="w-full flex pl-5 pr-10 py-5 text-left items-center justify-between rounded-r-full font-oswald text-[1.8rem] bg-text text-bg">
             <span>Mumbai, IN</span>
-            <div className="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-bg">
+            <div className="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-[#010411]">
               .
             </div>
           </div>

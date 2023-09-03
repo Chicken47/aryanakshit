@@ -39,7 +39,7 @@ export default function Home() {
       </div>
       <div
         id="content"
-        className="relative z-50 flex flex-col items-center w-full bg-[#0000001b] h-full max-w-[1366px] text-text"
+        className="relative z-50 flex flex-col overflow-hidden items-center w-full bg-[#00000047] h-full max-w-[1366px] text-text"
       >
         <Header />
         <HomePage />
