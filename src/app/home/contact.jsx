@@ -57,10 +57,14 @@ const Contact = () => {
           >
             akshit.aryan1999@gmail.com
           </Link>
-          <span className="px-10 py-3 transition-all border rounded-full cursor-pointer font-oswald border-text hover:bg-text hover:border hover:border-text hover:text-bg">
+          <Link
+            target="_blank"
+            href={"https://wa.me/917700072670"}
+            className="px-10 py-3 transition-all border rounded-full cursor-pointer font-oswald border-text hover:bg-text hover:border hover:border-text hover:text-bg"
+          >
             <WhatsApp />
             +91 7700072670
-          </span>
+          </Link>
         </div>
       </div>
     </div>

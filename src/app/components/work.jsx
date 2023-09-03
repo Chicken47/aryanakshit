@@ -22,7 +22,7 @@ const Work = ({ title, role, slug, img }) => {
       </div>
       <img
         src={img}
-        className="h-[200px] rounded border w-[350px] hidden transition-opacity group-hover:flex absolute opacity-0 group-hover:opacity-100"
+        className="h-[200px] object-cover object-center rounded border w-[350px] hidden transition-opacity group-hover:flex absolute opacity-0 group-hover:opacity-100"
         style={{
           top: blobPosition.y - 480,
           left: blobPosition.x,

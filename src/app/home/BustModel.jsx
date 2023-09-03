@@ -8,7 +8,7 @@ const BustModel = () => {
   const RotatingMesh = () => {
     const modelRef = useRef();
     useFrame(({ clock }) => {
-      modelRef.current.rotation.y = clock.getElapsedTime();
+      modelRef.current.rotation.y = -clock.getElapsedTime();
     });
     return <Model modelRef={modelRef} />;
   };
@@ -20,7 +20,7 @@ const BustModel = () => {
       <directionalLight />
       <ambientLight />
       <OrbitControls enableZoom={false} />
-      <Environment preset="sunset" />
+      <Environment preset="forest" />
       <RotatingMesh />
     </Canvas>
   );
