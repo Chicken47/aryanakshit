@@ -90,7 +90,7 @@ const Projects = () => {
                 : "flex w-full justify-evenly"
             }
           >
-            <div className="flex flex-col justify-center w-1/4 h-full space-y-2">
+            <div className="flex flex-col justify-center w-1/4 h-full space-y-5">
               <span className="font-yeseva text-[2vw]">{item.title}</span>
               <span className="font-oswald font-extrabold tracking-[5px]">
                 {item.date}
@@ -98,7 +98,7 @@ const Projects = () => {
               <span className="font-light font-oswald">{item.desc}</span>
               <Link
                 href={item.slug}
-                className="flex items-center justify-center w-1/2 px-6 py-2 rounded-full bg-text text-bg"
+                className="flex items-center justify-center w-1/2 px-6 py-2 transition-all rounded-full bg-text text-bg hover:bg-transparent hover:font-extrabold hover:text-text hover:border hover:border-text "
               >
                 Explore
               </Link>
@@ -106,7 +106,7 @@ const Projects = () => {
             <img
               src={item.img}
               // ref={imageRefs[index]}
-              className="w-1/2 border border-text rounded-3xl"
+              className="object-cover w-1/2 border border-text rounded-3xl"
             />
           </div>
         );

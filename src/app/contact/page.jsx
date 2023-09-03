@@ -17,7 +17,7 @@ const ContactPage = () => {
     };
   }, []);
   return (
-    <div className="w-full min-h-screen bg-slate-950">
+    <div className="flex justify-center w-full min-h-screen bg-slate-950">
       <div
         id="fixed-background"
         className="fixed w-full h-full pointer-events-none blur-[50px]"
@@ -34,7 +34,7 @@ const ContactPage = () => {
       </div>
       <div
         id="content"
-        className="relative z-50 flex flex-col items-center w-full bg-[#0000001b] h-full max-w-[1366px] text-text"
+        className="relative z-50 flex flex-col items-center w-full h-full max-w-[1366px] text-text"
       >
         <Header />
         <ContactContent />
