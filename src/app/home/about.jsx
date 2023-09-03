@@ -113,7 +113,7 @@ const AboutHome = () => {
       </div>
       <div id="right" className="w-1/2 h-full overflow-hidden">
         <div className="h-[12vw]"></div>
-        {/* <BustModel /> */}
+        <BustModel />
       </div>
     </div>
   );

@@ -6,6 +6,7 @@ import Header from "./components/header";
 import HomePage from "./home/home";
 import Works from "./home/works";
 import { useState, useEffect } from "react";
+import HowIWork from "./about/howiwork";
 
 export default function Home() {
   const [blobPosition, setBlobPosition] = useState({ x: 0, y: 0 });
@@ -43,6 +44,7 @@ export default function Home() {
         <Header />
         <HomePage />
         <AboutHome />
+        <HowIWork />
         <Works />
         <Contact />
         <Footer />
