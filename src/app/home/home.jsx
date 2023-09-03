@@ -111,8 +111,8 @@ const HomePage = () => {
         <div className="flex flex-col items-end w-6/12 home-right">
           <span className="font-oswald text-[2vw] w-full text-right tracking-wide">
             Creative <mark> UI/UX Designer </mark> and
-            <mark> Front-End Web Developer </mark>, dedicated to crafting
-            digital experiences that blend form and function seamlessly.
+            <mark> Front-End Developer </mark>, dedicated to crafting digital
+            experiences that blend form and function seamlessly.
           </span>
           <button
             onClick={() => window.scrollTo(0, document.body.scrollHeight)}

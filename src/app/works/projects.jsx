@@ -14,7 +14,9 @@ const Projects = () => {
       desc: "Designed and developed a new personal portfolio website. Used the latest NextJS 13 and employed its dynamic app routing and server - side components.  Used GSAP for beautiful animations and ThreeJS for 3D incorporation.",
       img: "/images/portfoliov2.png",
       slug: "/works/v2",
+      gitLink: "aryanakshit",
       reverse: true,
+      liveLink: "https://www.aryanakshit.vercel.app",
     },
     {
       title: "Personal Website v1",
@@ -22,7 +24,9 @@ const Projects = () => {
       desc: "Designed and developed a new personal portfolio website. Used the latest NextJS 13 and employed its dynamic app routing and server - side components.  Employed the use of REST APIs to get NASA Photo of the Day, A Quote Generator and Idea Generator for bored people.",
       img: "/images/portfoliov1.png",
       slug: "/works/v1",
+      gitLink: "akshitaryan",
       reverse: false,
+      liveLink: "https://www.akshitaryan.vercel.app",
     },
     {
       title: "Open for Policy & Impact",
@@ -30,7 +34,9 @@ const Projects = () => {
       desc: "Undertook an independent initiative to design and develop a website for OPI, a distinguished consulting firm.  This endeavour allowed me to explore both design and development aspects, contributing to a holistic digital solution.",
       img: "/images/opiSc.png",
       slug: "/works/opi",
+      gitLink: "opi-new-dev",
       reverse: true,
+      liveLink: "https://www.opi-new-dev.vercel.app",
     },
   ];
 
@@ -41,7 +47,6 @@ const Projects = () => {
         return (
           <div
             key={index}
-            // ref={projectRefs[index]}
             className={
               item.reverse
                 ? "flex flex-row-reverse w-full justify-evenly"
@@ -63,7 +68,6 @@ const Projects = () => {
             </div>
             <img
               src={item.img}
-              // ref={imageRefs[index]}
               className="object-cover w-1/2 border border-text rounded-3xl"
             />
           </div>
