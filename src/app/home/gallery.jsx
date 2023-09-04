@@ -84,6 +84,14 @@ const Gallery = () => {
           src="/gallery/lad4.jpeg"
           className="object-cover object-center h-full rounded-lg"
         />
+        <img
+          src="/gallery/lad1.jpeg"
+          className="object-cover object-center h-full rounded-lg"
+        />
+        <img
+          src="/gallery/lad3.jpeg"
+          className="object-cover object-center h-full rounded-lg"
+        />
       </div>
       <div
         ref={imageRowTwo}

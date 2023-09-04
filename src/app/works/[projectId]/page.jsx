@@ -95,12 +95,12 @@ const ContactPage = () => {
             src={selectedProject.img}
             className="object-cover w-2/3 border rounded-xl"
           />
-          <div className="w-2/3 font-oswald text-[20px] p-5 rounded-lg bg-[#00000084]">
+          <div className="w-2/3 font-oswald text-[20px] leading-10 p-5 tracking-[1px] rounded-lg bg-[#00000084]">
             {selectedProject.longDesc}
           </div>
           <div className="flex justify-between w-1/3 px-[2vw]">
             <Link
-              className="px-5 py-2 border rounded-full border-text bg-[#0000006e]"
+              className="px-5 py-2 border hover:bg-text hover:text-bg transition-all duration-500 rounded-full border-text bg-[#0000006e]"
               target="_blank"
               href={`https://www.github.com/Chicken47/${selectedProject.gitLink}`}
             >
@@ -108,7 +108,7 @@ const ContactPage = () => {
             </Link>
             <Link
               target="_blank"
-              className="px-5 py-2 border rounded-full border-text bg-[#0000006e]"
+              className="px-5 py-2 border rounded-full border-text bg-[#0000006e] hover:bg-text hover:text-bg transition-all duration-500"
               href={selectedProject.liveLink}
             >
               {"Live Site ->"}
