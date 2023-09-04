@@ -37,7 +37,7 @@ const AboutHome = () => {
         },
       });
       gsap.from(".text-description", {
-        // x: 300,
+        x: 300,
         // ease: ease,
         opacity: 0,
         scrollTrigger: {

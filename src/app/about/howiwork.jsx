@@ -28,7 +28,7 @@ const HowIWork = () => {
         y: 200,
         ease: ease,
         opacity: 0,
-        skewY: 12,
+        skewY: 20,
         scrollTrigger: {
           trigger: workCards,
           start: "top bottom",
