@@ -26,7 +26,7 @@ const Gallery = () => {
         x: "-85%",
       });
       gsap.to(imageRowOne.current, {
-        x: "-50%",
+        x: "-80%",
         scrollTrigger: {
           trigger: imageRowOne.current,
           start: "bottom bottom",
@@ -35,7 +35,7 @@ const Gallery = () => {
         },
       });
       gsap.to(imageRowTwo.current, {
-        x: "-50%",
+        x: "-70%",
         scrollTrigger: {
           trigger: imageRowTwo.current,
           start: "bottom bottom",
@@ -44,7 +44,7 @@ const Gallery = () => {
         },
       });
       gsap.to(imageRowThree.current, {
-        x: "-50%",
+        x: "-60%",
         scrollTrigger: {
           trigger: imageRowThree.current,
           start: "bottom bottom",
@@ -58,15 +58,15 @@ const Gallery = () => {
 
   return (
     <div className="flex flex-col w-full min-h-screen p-5 space-y-10 overflow-hidden">
-      <span ref={textRef} className="font-akira text-[10vw]">
-        photo_gallery_photo_gallery_photo_gallery
+      <span ref={textRef} className="font-yeseva text-[5vw]">
+        Some of my clicks
       </span>
       <span ref={textRef} className="font-akira text-[3vw]">
-        ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh
+        ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_
       </span>
       <div
         ref={imageRowOne}
-        className="w-auto flex items-center h-[45vh] space-x-10"
+        className="w-auto flex items-center h-[40vh] space-x-10"
       >
         <img
           src="/gallery/lad1.jpeg"
@@ -113,15 +113,15 @@ const Gallery = () => {
           src="/gallery/lad8.jpeg"
           className="object-cover object-center h-full rounded-lg"
         />
+        <img
+          src="/gallery/lad2.jpeg"
+          className="object-cover object-center h-full rounded-lg"
+        />
       </div>
       <div
         ref={imageRowThree}
         className="w-auto flex items-center h-[45vh] space-x-10"
       >
-        <img
-          src="/gallery/lad8.jpeg"
-          className="object-cover object-center h-full rounded-lg"
-        />
         <img
           src="/gallery/lad9.jpeg"
           className="object-cover object-center h-full rounded-lg"
@@ -132,6 +132,10 @@ const Gallery = () => {
         />
         <img
           src="/gallery/lad11.jpeg"
+          className="object-cover object-center h-full rounded-lg"
+        />
+        <img
+          src="/gallery/lad12.jpeg"
           className="object-cover object-center h-full rounded-lg"
         />
       </div>
