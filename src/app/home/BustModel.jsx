@@ -17,8 +17,6 @@ const BustModel = () => {
       style={{ width: "100%", height: "100%" }}
       camera={{ position: [10, 4, 2] }}
     >
-      <directionalLight />
-      <ambientLight />
       <OrbitControls enableZoom={false} />
       <Environment preset="forest" />
       <RotatingMesh />
