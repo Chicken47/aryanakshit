@@ -58,8 +58,8 @@ const Gallery = () => {
 
   return (
     <div className="flex flex-col w-full min-h-screen p-5 space-y-10 overflow-hidden">
-      <span ref={textRef} className="font-yeseva text-[5vw]">
-        Showcase of My Photos
+      <span ref={textRef} className="font-yeseva text-[3vw]">
+        Some photos by yours truly
       </span>
       <span ref={textRef} className="font-akira text-[3vw]">
         ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_
