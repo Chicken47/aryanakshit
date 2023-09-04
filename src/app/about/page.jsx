@@ -27,7 +27,6 @@ const AboutPage = () => {
         className="fixed w-full h-full pointer-events-none blur-[50px]"
       >
         <div
-          // id="blob"
           className="h-[30vw] w-[27vw] bg-gradient-to-br from-red-500 to-blue-600 rounded-full animate-slow-spin absolute"
           style={{
             top: blobPosition.y - 200,
@@ -35,10 +34,7 @@ const AboutPage = () => {
           }}
         ></div>
       </div>
-      <div
-        // id="content"
-        className="relative z-50 flex flex-col items-center w-full h-full max-w-[1366px] text-text"
-      >
+      <div className="relative z-50 flex flex-col items-center w-full h-full max-w-[1366px] text-text">
         <Header />
         <AboutHero />
         <HowIWork />
