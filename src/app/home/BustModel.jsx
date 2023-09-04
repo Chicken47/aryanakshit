@@ -18,7 +18,7 @@ const BustModel = () => {
       camera={{ position: [10, 4, 2] }}
     >
       <OrbitControls enableZoom={false} />
-      <Environment preset="forest" />
+      <Environment preset="sunset" />
       <RotatingMesh />
     </Canvas>
   );
