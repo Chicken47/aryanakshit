@@ -26,29 +26,29 @@ const Gallery = () => {
         x: "-85%",
       });
       gsap.to(imageRowOne.current, {
-        x: "-80%",
+        x: "-100%",
         scrollTrigger: {
           trigger: imageRowOne.current,
-          start: "bottom bottom",
-          end: "bottom top",
+          start: "bottom 90%",
+          end: "bottom 15%",
           scrub: 2,
         },
       });
       gsap.to(imageRowTwo.current, {
-        x: "-70%",
+        x: "-100%",
         scrollTrigger: {
           trigger: imageRowTwo.current,
-          start: "bottom bottom",
-          end: "bottom top",
+          start: "bottom 90%",
+          end: "bottom 15%",
           scrub: 2,
         },
       });
       gsap.to(imageRowThree.current, {
-        x: "-60%",
+        x: "-100%",
         scrollTrigger: {
           trigger: imageRowThree.current,
-          start: "bottom bottom",
-          end: "bottom top",
+          start: "bottom 90%",
+          end: "bottom 15%",
           scrub: 2,
         },
       });
@@ -59,10 +59,10 @@ const Gallery = () => {
   return (
     <div className="flex flex-col w-full min-h-screen p-5 space-y-10 overflow-hidden">
       <span ref={textRef} className="font-yeseva text-[5vw]">
-        Some of my clicks
+        Showcase of My Photos
       </span>
       <span ref={textRef} className="font-akira text-[3vw]">
-        ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_ladakh_photos_
+        ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_ladakh_
       </span>
       <div
         ref={imageRowOne}

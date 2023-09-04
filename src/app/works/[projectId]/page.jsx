@@ -32,7 +32,7 @@ const ContactPage = () => {
       projectId: "v2",
       gitLink: "aryanakshit",
       reverse: true,
-      liveLink: "https://www.aryanakshit.vercel.app",
+      liveLink: "https://aryanakshit.vercel.app",
     },
     {
       title: "Personal Website v1",
@@ -45,7 +45,7 @@ const ContactPage = () => {
       projectId: "v1",
       gitLink: "akshitaryan",
       reverse: false,
-      liveLink: "https://www.akshitaryan.vercel.app",
+      liveLink: "https://akshitaryan.vercel.app",
     },
     {
       title: "Open for Policy & Impact",
@@ -58,7 +58,7 @@ const ContactPage = () => {
       projectId: "opi",
       gitLink: "opi-new-dev",
       reverse: true,
-      liveLink: "https://www.opi-new-dev.vercel.app",
+      liveLink: "https://opi-new-dev.vercel.app",
     },
   ];
 
