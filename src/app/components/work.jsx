@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
+import HoverButton from "./hoverButton/hoverButton";
 
 const Work = ({ title, role, slug, img }) => {
   const [blobPosition, setBlobPosition] = useState({ x: 0, y: 0 });
@@ -31,7 +32,7 @@ const Work = ({ title, role, slug, img }) => {
       />
       <div>
         <Link href={slug} className="font-akira">
-          see project
+          <HoverButton />
         </Link>
       </div>
     </div>
