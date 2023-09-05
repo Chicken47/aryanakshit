@@ -87,13 +87,13 @@ const Experience = () => {
               OPEN FOR POLICY & IMPACT
             </span>
             <span className="font-oswald text-[1vw]">May 2023 - June 2023</span>
-            <span className="text-right font-oswald font-extralight">
+            <span className="font-light text-right font-oswald">
               - Pioneered the development of a dynamic website for a nascent
-              consulting enterprise. <br /> - Conceptualized and executed the
-              website's design, along with generating a substantial portion of
-              its content. <br /> - Sole-handedly led and completed this
-              project, showcasing my ability to manage and deliver
-              independently.
+              consulting enterprise. <br /> - <mark> Conceptualized </mark> and
+              executed the website's design, along with generating a substantial
+              portion of its content. <br /> -{" "}
+              <mark> Sole-handedly led and completed </mark> this project,
+              showcasing my ability to manage and deliver independently.
             </span>
           </div>
         </div>
@@ -112,17 +112,21 @@ const Experience = () => {
               moneyHop, a cross-border payment solution
             </span>
             <span className="font-oswald text-[1vw]">Feb 2022 - July 2023</span>
-            <span className="text-left font-oswald font-extralight">
+            <span className="font-light text-left font-oswald">
               - I crafted three advanced payment portals, employing the latest
-              tech. This drove a noteworthy weekly business increase of $5
-              million. <br />
-              - Upheld project aesthetics, stayed current with trends using
-              Tailwind CSS, and ensured code integrity with TypeScript.
-              Seamlessly managed state via Recoil in React. <br />
-              - Enhanced UX with Framer Motion animations, prioritized security
-              via SJCL encryption, and met banking regs. <br />- Launched
-              operational end-to-end online remittance platform for major Indian
-              bank.
+              tech. This drove a noteworthy weekly business{" "}
+              <mark> increase of $5 million. </mark> <br />- Upheld project
+              aesthetics, stayed current with trends using
+              <mark> Tailwind CSS </mark>, and ensured code integrity with
+              <mark> TypeScript </mark>. Seamlessly managed state via{" "}
+              <mark> Recoil </mark> in React. <br />- Enhanced UX with{" "}
+              <mark> Framer Motion animations </mark>, prioritized security via
+              <mark> SJCL encryption </mark>, and met banking regs. <br />-
+              <mark>
+                {" "}
+                Launched operational end-to-end online money remittance platform{" "}
+              </mark>{" "}
+              for major Indian bank.
             </span>
           </div>
         </div>
@@ -143,16 +147,17 @@ const Experience = () => {
             <span className="font-oswald text-[1vw]">
               May 2020 - November 2021
             </span>
-            <span className="text-right font-oswald font-extralight">
-              - Spearheaded the technology sector, overseeing strategic
-              initiatives. <br />- Orchestrated the development and upkeep of
-              the PSC website, serving as a hub for research papers,
-              newsletters, and podcasts. <br />- Leveraged the Adobe Creative
-              Suite to craft compelling visuals, including logo design,
-              Instagram Reels video editing, engaging social media posts,
-              captivating video trailers, eye-catching posters, and engaging
-              podcasts. <br />- Innovatively integrated design and technology to
-              enhance the organization's online presence and engagement. <br />
+            <span className="font-light text-right font-oswald">
+              - <mark> Spearheaded the technology </mark> sector, overseeing
+              strategic initiatives. <br />- Orchestrated the{" "}
+              <mark> development and upkeep of the PSC website </mark>, serving
+              as a hub for research papers, newsletters, and podcasts. <br />-
+              Leveraged the <mark> Adobe Creative Suite </mark> to craft
+              compelling visuals, including logo design, Instagram Reels video
+              editing, engaging social media posts, captivating video trailers,
+              eye-catching posters, and engaging podcasts. <br />- Innovatively
+              integrated design and technology to enhance the organization's
+              <mark> online presence and engagement </mark>. <br />
             </span>
           </div>
         </div>
