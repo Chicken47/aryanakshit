@@ -60,6 +60,19 @@ const ContactPage = () => {
       reverse: true,
       liveLink: "https://opi-new-dev.vercel.app",
     },
+    {
+      title: "HopRemit",
+      date: "May 2023 - July 2023",
+      desc: "Undertook an independent initiative to design and develop a website for OPI, a distinguished consulting firm.  This endeavour allowed me to explore both design and development aspects, contributing to a holistic digital solution.",
+      longDesc:
+        "During my tenure as a dedicated software engineer at moneyHOP, I had the distinct privilege of serving as a foundational member of the tech team, where I played a pivotal role in shaping the landscape of our organization's offerings. My primary responsibilities revolved around spearheading the comprehensive development of the frontend components for an array of cutting-edge financial solutions, including cross-border Neo Bank Solutions, Remittance platforms, and SaaS modules. One of my most noteworthy accomplishments during this time was the inception and construction of the Remittance frontend system from the ground up. This endeavor was no small feat and demanded a deep understanding of intricate technical intricacies, strategic vision, and meticulous attention to detail. I collaborated closely with our esteemed Founder and Product Managers, ensuring that our product roadmap aligned seamlessly with the ever-evolving market demands. The relentless pursuit of perfection and the unyielding drive to achieve product-market fit were central themes throughout this journey. Beyond my core responsibilities, I also took on an active role in the recruitment process for our tech team. Identifying top-tier talent and onboarding them to our dynamic work environment became a part of my mission to fortify the team's capabilities. Moreover, I undertook the role of mentor to junior team members, providing them with guidance and expertise, which was crucial for their growth and development as professionals. I also extended my support by assisting them in resolving complex issues related to customer and vendor onboarding, as well as promptly addressing any bug-related concerns. This collaborative spirit within the team fostered an atmosphere of continuous learning and innovation. The scope of my work at moneyHOP allowed me to explore and harness a wide array of cutting-edge technologies. In particular, my exposure to Progressive Web Apps (PWAs) opened up exciting avenues for enhancing user experiences. Leveraging AWS services such as DynamoDB, AWS Amplify, and s3 Bucket not only expanded my technical skill set but also bolstered our infrastructure, ensuring seamless and reliable services for our customers. In conclusion, my time as a software engineer at moneyHOP was marked by a relentless pursuit of excellence, a commitment to innovation, and a dedication to nurturing a thriving tech team. I am immensely proud of the role I played in bringing our visionary financial solutions to life, and I look forward to building on these experiences to continue driving progress in the dynamic world of software engineering.",
+      img: "/images/hopremit.png",
+      slug: "/works/hopremit",
+      projectId: "hopremit",
+      // gitLink: "opi-new-dev",
+      reverse: true,
+      liveLink: "https://hopremit.moneyhop.co",
+    },
   ];
 
   const selectedProject = projectList.find(

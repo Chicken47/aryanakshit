@@ -29,7 +29,7 @@ module.exports = {
       },
       // Configure animation duration
       animation: {
-        "slow-spin": "slow-spin 2.5s linear infinite", // 5s is the duration of the animation
+        "slow-spin": "slow-spin 5s linear infinite", // 5s is the duration of the animation
       },
     },
   },

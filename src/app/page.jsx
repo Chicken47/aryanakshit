@@ -30,7 +30,7 @@ export default function Home() {
       >
         <div
           id="blob"
-          className="h-[30vw] w-[27vw] bg-gradient-to-br from-green-500 to-blue-600 rounded-full animate-slow-spin"
+          className="h-[30vw] w-[25vw] bg-gradient-to-br from-green-500 to-blue-600 rounded-full animate-slow-spin"
           style={{
             position: "absolute",
             top: blobPosition.y - 200,

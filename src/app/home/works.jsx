@@ -25,11 +25,20 @@ const Works = () => {
     },
     {
       title: "Open for Policy & Impact",
-      date: "February 2022 - July 2023",
+      date: "May 2023 - July 2023",
       desc: "Undertook an independent initiative to design and develop a website for OPI, a distinguished consulting firm.  This endeavour allowed me to explore both design and development aspects, contributing to a holistic digital solution.",
       img: "/images/opiSc.png",
       role: "(ux/ui design, development)",
       slug: "/works/opi",
+      reverse: true,
+    },
+    {
+      title: "HopRemit",
+      date: "February 2022 - July 2023",
+      desc: "Undertook an independent initiative to design and develop a website for OPI, a distinguished consulting firm.  This endeavour allowed me to explore both design and development aspects, contributing to a holistic digital solution.",
+      img: "/images/hopremit.png",
+      role: "(development)",
+      slug: "/works/hopremit",
       reverse: true,
     },
   ];

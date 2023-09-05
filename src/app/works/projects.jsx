@@ -30,13 +30,22 @@ const Projects = () => {
     },
     {
       title: "Open for Policy & Impact",
-      date: "February 2022 - July 2023",
+      date: "May 2023 - July 2023",
       desc: "Undertook an independent initiative to design and develop a website for OPI, a distinguished consulting firm.  This endeavour allowed me to explore both design and development aspects, contributing to a holistic digital solution.",
       img: "/images/opiSc.png",
       slug: "/works/opi",
       gitLink: "opi-new-dev",
       reverse: true,
       liveLink: "https://www.opi-new-dev.vercel.app",
+    },
+    {
+      title: "HopRemit",
+      date: "February 2022 - July 2023",
+      desc: "Created a full-stack internation payment portal neo-bank solution from scratch as a founding member. Shaped the product continuously by collaborating with the product, design teams and the CEO. The product is live that averages over 5 million USD a week.",
+      img: "/images/hopremit.png",
+      role: "(development)",
+      slug: "/works/hopremit",
+      reverse: false,
     },
   ];
 
