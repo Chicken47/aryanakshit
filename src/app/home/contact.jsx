@@ -7,7 +7,7 @@ import React from "react";
 const Contact = () => {
   return (
     <div className="flex flex-col justify-between w-full p-5 space-y-10">
-      <div className="flex flex-col items-start w-full">
+      {/* <div className="flex flex-col items-start w-full">
         <div className="flex flex-col items-start w-full">
           <span className="font-yeseva text-[3vw] w-full space-x-16">
             <span>Name:</span>
@@ -44,7 +44,7 @@ const Contact = () => {
             />
           </span>
         </div>
-      </div>
+      </div> */}
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start">
           <span className="font-akira text-[9vw]">Let's</span>

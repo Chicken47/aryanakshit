@@ -100,17 +100,18 @@ const AboutHome = () => {
           className="font-oswald font-light text-[1.2rem] tracking-wide"
         >
           I'm a UX/UI designer from India with 2 years of experience. I
-          specialize in minimal and brutalist designs, incorporating seamless
-          animations to improve user experience and retention. <br />
+          specialize in <mark> minimal and brutalist designs </mark>,
+          incorporating <mark> seamless animations </mark> to improve user
+          experience and retention. <br />
           I've also been experimenting with 3D elements in web design. Outside
           of work, I enjoy music, cycling, badminton, and photography.
         </span>
         <div className="p-5 mt-5 bg-[#3cafaf24] rounded-lg font-oswald text-description">
           - I used this cool 3D model of an abstract sculpture and animated it
-          in my website. <br />
-          - You can drag it around with your mouse to explore it from different
-          angles. <br />- I am still learning about 3D and web development, but
-          I am excited to see what I can create in the future.
+          in my website. <br />- You can{" "}
+          <mark> drag it around with your mouse </mark> to explore it from
+          different angles. <br />- I am still learning about 3D and web
+          development, but I am excited to see what I can create in the future.
         </div>
       </div>
       <div id="right" className="w-1/2 h-full overflow-hidden">

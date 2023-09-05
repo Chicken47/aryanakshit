@@ -57,7 +57,7 @@ const Gallery = () => {
   }, []);
 
   return (
-    <div className="flex flex-col w-full min-h-screen p-5 space-y-10 overflow-hidden">
+    <div className="flex flex-col w-full min-h-screen py-[20vh] p-5 space-y-10 overflow-hidden">
       <span ref={textRef} className="font-yeseva text-[3vw]">
         Some photos by yours truly
       </span>

@@ -16,7 +16,9 @@ const ServicesAbout = () => {
         y: 200,
         ease: ease,
         opacity: 0,
+        x: -500,
         skewY: 12,
+        skewX: 20,
         stagger: {
           amount: 0.3,
         },
@@ -31,6 +33,7 @@ const ServicesAbout = () => {
         y: 200,
         ease: ease,
         opacity: 0,
+        x: 500,
         skewY: 12,
         stagger: {
           amount: 0.3,
@@ -46,7 +49,7 @@ const ServicesAbout = () => {
     return () => ctx.revert();
   }, []);
   return (
-    <div className="flex flex-col items-center justify-center w-full h-screen space-y-5">
+    <div className="flex flex-col items-center justify-center w-full h-[80vh] space-y-5">
       <span className="w-full text-center font-akira text-[3vw]">
         Services I Offer
       </span>

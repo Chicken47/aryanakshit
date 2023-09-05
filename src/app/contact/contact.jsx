@@ -3,8 +3,8 @@ import React from "react";
 
 const ContactContent = () => {
   return (
-    <div className="flex flex-col justify-center w-full p-5 pt-[6vw] space-y-10 text-text">
-      <div className="flex w-full h-full">
+    <div className="flex flex-col justify-center w-full p-5 pt-[6vw] min-h-[90vh] space-y-10 text-text">
+      {/* <div className="flex w-full h-full">
         <div className="flex flex-col justify-center w-1/2">
           <div className="flex flex-col items-start w-full">
             <span className="font-yeseva text-[3vw] w-full space-x-16">
@@ -47,7 +47,7 @@ const ContactContent = () => {
           src="https://media.giphy.com/media/xobxBtqQ4wZyg/giphy.gif"
           className="rounded-full"
         />
-      </div>
+      </div> */}
       <div className="flex items-center justify-between">
         <div className="flex flex-col items-start">
           <span className="font-akira text-[9vw]">Let's</span>

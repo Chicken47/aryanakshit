@@ -2,12 +2,13 @@
 
 import {
   AlternateEmail,
+  BackHand,
   DocumentScanner,
   GitHub,
   LinkedIn,
 } from "@mui/icons-material";
 import React, { useEffect } from "react";
-import { Power3, Power4, gsap } from "gsap";
+import { Power4, gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 const HomePage = () => {
@@ -72,10 +73,10 @@ const HomePage = () => {
       </div>
       <div className="flex items-center justify-between w-full">
         <div className="flex flex-col items-center justify-center w-1/5 location-links">
-          <div className="w-full flex pl-5 pr-10 py-5 text-left items-center justify-between rounded-r-full font-oswald text-[1.8rem] bg-text text-bg">
+          <div className="w-full flex py-5 text-left items-center justify-center space-x-5 rounded-r-full font-oswald text-[2vw] bg-text text-bg">
             <span>Mumbai, IN</span>
-            <div className="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-[#010411]">
-              .
+            <div className="flex items-center justify-center w-[80px] h-[80px] rounded-full bg-[#010411] text-text">
+              <BackHand />
             </div>
           </div>
           <div className="flex items-center justify-around w-full py-5">

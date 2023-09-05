@@ -3,10 +3,9 @@ import React, { useState, useEffect } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import AboutHero from "./abouthero";
-import HowIWork from "./howiwork";
 import Experience from "./experience";
-import ServicesAbout from "./services";
 import Gallery from "../home/gallery";
+import Contact from "../home/contact";
 
 const AboutPage = () => {
   const [blobPosition, setBlobPosition] = useState({ x: 0, y: 0 });
@@ -38,10 +37,9 @@ const AboutPage = () => {
       <div className="relative z-50 flex flex-col items-center w-full h-full max-w-[1366px] text-text">
         <Header />
         <AboutHero />
-        <Gallery />
-        <HowIWork />
         <Experience />
-        <ServicesAbout />
+        <Gallery />
+        <Contact />
         <Footer />
       </div>
     </div>
