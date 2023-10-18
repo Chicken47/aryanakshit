@@ -8,21 +8,14 @@ import Works from "./home/works";
 import { useState, useEffect } from "react";
 import HowIWork from "./about/howiwork";
 import ServicesAbout from "./about/services";
+import mixpanel from "mixpanel-browser";
 
 export default function Home() {
   mixpanel.init("dcc97e50489f64a322bcd4ab4cf2e74c", { debug: true });
   const [blobPosition, setBlobPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    const options = {
-      method: "POST",
-      headers: { accept: "text/plain", "content-type": "application/json" },
-    };
-
-    fetch("https://api.mixpanel.com/track", options)
-      .then((response) => response.json())
-      .then((response) => console.log(response))
-      .catch((err) => console.error(err));
+    mixpanel.track("event here");
   }, []);
 
   useEffect(() => {
