@@ -10,12 +10,26 @@ import HowIWork from "./about/howiwork";
 import ServicesAbout from "./about/services";
 
 export default function Home() {
+  mixpanel.init("dcc97e50489f64a322bcd4ab4cf2e74c", { debug: true });
   const [blobPosition, setBlobPosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const options = {
+      method: "POST",
+      headers: { accept: "text/plain", "content-type": "application/json" },
+    };
+
+    fetch("https://api.mixpanel.com/track", options)
+      .then((response) => response.json())
+      .then((response) => console.log(response))
+      .catch((err) => console.error(err));
+  }, []);
 
   useEffect(() => {
     const handleMouseMove = (e) => {
       setBlobPosition({ x: e.clientX, y: e.clientY });
     };
+
     document.addEventListener("mousemove", handleMouseMove);
     return () => {
       document.removeEventListener("mousemove", handleMouseMove);
