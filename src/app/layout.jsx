@@ -22,6 +22,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <script defer data-website-id="67077279ba00974b59f284e4" data-domain="aryanakshit.vercel.app" src="https://datafa.st/js/script.js"></script>
+      </head>
       <body
         className={`${akira.variable} ${yeseva.variable} ${oswald.variable}`}
       >
