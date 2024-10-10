@@ -116,7 +116,7 @@ const HomePage = () => {
             experiences that blend form and function seamlessly.
           </span>
           <button
-            onClick={() => window.scrollTo(0, document.body.scrollHeight)}
+            onClick={() => window?.datafast("LinkedIn", { description: "some desciption blah blahgit" })}
             className="flex items-center mt-5 cursor-pointer float-right justify-center w-1/4 text-[21px] py-2 rounded-full font-oswald bg-text text-bg"
           >
             Get In Touch
