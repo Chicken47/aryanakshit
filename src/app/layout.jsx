@@ -23,12 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
-          defer
-          data-website-id="672cc5b2abaa23765ab4cb75"
-          data-domain="aryanakshit.vercel.app"
-          src="https://datafa.st/js/script.js"
-        ></script>
+        <script src="https://trukaqdjxdejcjlhivct.supabase.co/storage/v1/object/public/script/track.js"></script>
       </head>
       <body
         className={`${akira.variable} ${yeseva.variable} ${oswald.variable}`}
